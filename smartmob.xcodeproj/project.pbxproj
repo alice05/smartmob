@@ -25,6 +25,7 @@
 		F8C4800722CCC7FC0000CDFB /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4800622CCC7FC0000CDFB /* PhotoListViewController.swift */; };
 		F8C4800A22CCCB180000CDFB /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4800922CCCB180000CDFB /* CircularProgressView.swift */; };
 		F8C4800C22CCCB640000CDFB /* ViewIdentifiers_Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4800B22CCCB640000CDFB /* ViewIdentifiers_Constants.swift */; };
+		F8C4800E22CCCC920000CDFB /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4800D22CCCC920000CDFB /* PhotoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		F8C4800622CCC7FC0000CDFB /* PhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
 		F8C4800922CCCB180000CDFB /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		F8C4800B22CCCB640000CDFB /* ViewIdentifiers_Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewIdentifiers_Constants.swift; sourceTree = "<group>"; };
+		F8C4800D22CCCC920000CDFB /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				F8C4800222CCC6690000CDFB /* PhotoDetailViewModel.swift */,
+				F8C4800D22CCCC920000CDFB /* PhotoDetailViewController.swift */,
 			);
 			path = PhotoDetailView;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				F8C47FF822CC85EF0000CDFB /* ModelLayer.swift in Sources */,
 				F8C4800C22CCCB640000CDFB /* ViewIdentifiers_Constants.swift in Sources */,
 				F8C47FEC22CC7F9A0000CDFB /* Network+Constants.swift in Sources */,
+				F8C4800E22CCCC920000CDFB /* PhotoDetailViewController.swift in Sources */,
 				F8C47FC722CC72DB0000CDFB /* AppDelegate.swift in Sources */,
 				F8C4800722CCC7FC0000CDFB /* PhotoListViewController.swift in Sources */,
 				F8C47FF222CC81FA0000CDFB /* AssestsDTO.swift in Sources */,
