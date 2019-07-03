@@ -21,6 +21,7 @@
 		F8C47FF822CC85EF0000CDFB /* ModelLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C47FF722CC85EF0000CDFB /* ModelLayer.swift */; };
 		F8C4800122CCC59B0000CDFB /* PhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4800022CCC59B0000CDFB /* PhotoListViewModel.swift */; };
 		F8C4800322CCC6690000CDFB /* PhotoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4800222CCC6690000CDFB /* PhotoDetailViewModel.swift */; };
+		F8C4800522CCC73B0000CDFB /* PhotoViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4800422CCC73B0000CDFB /* PhotoViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		F8C47FF722CC85EF0000CDFB /* ModelLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLayer.swift; sourceTree = "<group>"; };
 		F8C4800022CCC59B0000CDFB /* PhotoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewModel.swift; sourceTree = "<group>"; };
 		F8C4800222CCC6690000CDFB /* PhotoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewModel.swift; sourceTree = "<group>"; };
+		F8C4800422CCC73B0000CDFB /* PhotoViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 		F8C47FFD22CCC55B0000CDFB /* PhotoListCell */ = {
 			isa = PBXGroup;
 			children = (
+				F8C4800422CCC73B0000CDFB /* PhotoViewCellViewModel.swift */,
 			);
 			path = PhotoListCell;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C4800522CCC73B0000CDFB /* PhotoViewCellViewModel.swift in Sources */,
 				F8C47FF422CC841E0000CDFB /* NetworkLayer.swift in Sources */,
 				F8C47FF822CC85EF0000CDFB /* ModelLayer.swift in Sources */,
 				F8C47FEC22CC7F9A0000CDFB /* Network+Constants.swift in Sources */,
