@@ -14,6 +14,16 @@ class PhotoListViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     
+    //Method Injection
+    func configure(photoListViewModel: PhotoListViewModel, registry: DependencyRegistry) {
+        self.photoListViewModel = photoListViewModel
+        self.registry = registry
+    }
+    
+    //Variables
+    var photoListViewModel: PhotoListViewModel!
+    var registry: DependencyRegistry!
+    
     lazy var activityIndicator: UIActivityIndicatorView = {
         let activityIndicator = UIActivityIndicatorView(style: .gray)
         activityIndicator.center = view.center
@@ -22,11 +32,10 @@ class PhotoListViewController: UIViewController {
         return activityIndicator
     }()
     
-    var photoListViewModel: PhotoListViewModel!
-
+    //View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
         self.searchBar.delegate = self
@@ -68,14 +77,16 @@ extension PhotoListViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        assert(false, "should implement it")
-        return UICollectionViewCell()
+        let assest = photoListViewModel.data[indexPath.item]
+        let cell = registry.makePhotoCell(for: collectionView, at: indexPath, assests: assest)
+        return cell
     }
 }
 
 extension PhotoListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        debugPrint("didselected")
+        let assest = self.photoListViewModel.data[indexPath.row]
+        
     }
 }
 
