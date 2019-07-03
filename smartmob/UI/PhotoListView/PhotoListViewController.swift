@@ -86,12 +86,25 @@ extension PhotoListViewController: UICollectionViewDataSource {
 extension PhotoListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let assest = self.photoListViewModel.data[indexPath.row]
-        
+        debugPrint("tapped")
     }
 }
 
 extension PhotoListViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         debugPrint("text is \(searchBar.text)")
+        if let text = searchBar.text {
+            self.photoListViewModel.searchData(withText: text) {[weak self] in
+                self?.newDataRecieved()
+            }
+        }
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            self.photoListViewModel.loadData { [weak self] in
+                self?.newDataRecieved()
+            }
+        }
     }
 }
