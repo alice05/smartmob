@@ -24,6 +24,7 @@
 		F8C4800522CCC73B0000CDFB /* PhotoViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4800422CCC73B0000CDFB /* PhotoViewCellViewModel.swift */; };
 		F8C4800722CCC7FC0000CDFB /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4800622CCC7FC0000CDFB /* PhotoListViewController.swift */; };
 		F8C4800A22CCCB180000CDFB /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4800922CCCB180000CDFB /* CircularProgressView.swift */; };
+		F8C4800C22CCCB640000CDFB /* ViewIdentifiers_Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4800B22CCCB640000CDFB /* ViewIdentifiers_Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		F8C4800422CCC73B0000CDFB /* PhotoViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewCellViewModel.swift; sourceTree = "<group>"; };
 		F8C4800622CCC7FC0000CDFB /* PhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
 		F8C4800922CCCB180000CDFB /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		F8C4800B22CCCB640000CDFB /* ViewIdentifiers_Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewIdentifiers_Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				F8C47FEB22CC7F9A0000CDFB /* Network+Constants.swift */,
+				F8C4800B22CCCB640000CDFB /* ViewIdentifiers_Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				F8C4800522CCC73B0000CDFB /* PhotoViewCellViewModel.swift in Sources */,
 				F8C47FF422CC841E0000CDFB /* NetworkLayer.swift in Sources */,
 				F8C47FF822CC85EF0000CDFB /* ModelLayer.swift in Sources */,
+				F8C4800C22CCCB640000CDFB /* ViewIdentifiers_Constants.swift in Sources */,
 				F8C47FEC22CC7F9A0000CDFB /* Network+Constants.swift in Sources */,
 				F8C47FC722CC72DB0000CDFB /* AppDelegate.swift in Sources */,
 				F8C4800722CCC7FC0000CDFB /* PhotoListViewController.swift in Sources */,
