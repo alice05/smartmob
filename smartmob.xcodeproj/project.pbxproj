@@ -10,7 +10,6 @@
 		8605C66D5E101F723A26D0CF /* Pods_smartmobTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB6232F1C9DF71EFE09D5EC /* Pods_smartmobTests.framework */; };
 		DFBEB604FBF35AB9D8FEAA26 /* Pods_smartmob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D65FE3CEB037CF64F3B998 /* Pods_smartmob.framework */; };
 		F8C47FC722CC72DB0000CDFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C47FC622CC72DB0000CDFB /* AppDelegate.swift */; };
-		F8C47FC922CC72DB0000CDFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C47FC822CC72DB0000CDFB /* ViewController.swift */; };
 		F8C47FCC22CC72DB0000CDFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C47FCA22CC72DB0000CDFB /* Main.storyboard */; };
 		F8C47FCE22CC72DB0000CDFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C47FCD22CC72DB0000CDFB /* Assets.xcassets */; };
 		F8C47FD122CC72DB0000CDFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C47FCF22CC72DB0000CDFB /* LaunchScreen.storyboard */; };
@@ -36,7 +35,6 @@
 		ADD8526D0A8EA390924BA891 /* Pods-smartmob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartmob.release.xcconfig"; path = "Target Support Files/Pods-smartmob/Pods-smartmob.release.xcconfig"; sourceTree = "<group>"; };
 		F8C47FC322CC72DB0000CDFB /* smartmob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartmob.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C47FC622CC72DB0000CDFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F8C47FC822CC72DB0000CDFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F8C47FCB22CC72DB0000CDFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8C47FCD22CC72DB0000CDFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8C47FD022CC72DB0000CDFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 				05431AF902A1CB8AD88F87E7 /* Pods-smartmobTests.debug.xcconfig */,
 				9D40415C3E3C7B03105B91D2 /* Pods-smartmobTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -111,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				F8C47FC622CC72DB0000CDFB /* AppDelegate.swift */,
-				F8C47FC822CC72DB0000CDFB /* ViewController.swift */,
 				F8C47FCA22CC72DB0000CDFB /* Main.storyboard */,
 				F8C47FCD22CC72DB0000CDFB /* Assets.xcassets */,
 				F8C47FCF22CC72DB0000CDFB /* LaunchScreen.storyboard */,
@@ -279,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8C47FC922CC72DB0000CDFB /* ViewController.swift in Sources */,
 				F8C47FC722CC72DB0000CDFB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
