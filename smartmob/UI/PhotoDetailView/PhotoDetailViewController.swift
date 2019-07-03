@@ -7,13 +7,31 @@
 //
 
 import UIKit
+import Kingfisher
+
 
 class PhotoDetailViewController: UIViewController {
-
+    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var progressView: CircularProgressBar!
+    @IBOutlet weak var playImageView: UIImageView! {
+        didSet {
+            self.playImageView.isHidden = true
+        }
+    }
+    
+    // Variables
+    var photodetailViewModel: PhotodetailViewModel!
+    
+    // Method injection
+    func configure(photodetailViewModel: PhotodetailViewModel) {
+        self.photodetailViewModel = photodetailViewModel
+    }
+    
+    // View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        imageView.kf.setImage(with: URL(string: photodetailViewModel.url)!)
     }
-
 }
