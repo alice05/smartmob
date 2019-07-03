@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8605C66D5E101F723A26D0CF /* Pods_smartmobTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB6232F1C9DF71EFE09D5EC /* Pods_smartmobTests.framework */; };
+		DFBEB604FBF35AB9D8FEAA26 /* Pods_smartmob.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D65FE3CEB037CF64F3B998 /* Pods_smartmob.framework */; };
+		F8C47FC722CC72DB0000CDFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C47FC622CC72DB0000CDFB /* AppDelegate.swift */; };
+		F8C47FC922CC72DB0000CDFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C47FC822CC72DB0000CDFB /* ViewController.swift */; };
+		F8C47FCC22CC72DB0000CDFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C47FCA22CC72DB0000CDFB /* Main.storyboard */; };
+		F8C47FCE22CC72DB0000CDFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C47FCD22CC72DB0000CDFB /* Assets.xcassets */; };
+		F8C47FD122CC72DB0000CDFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C47FCF22CC72DB0000CDFB /* LaunchScreen.storyboard */; };
+		F8C47FDC22CC72DB0000CDFB /* smartmobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C47FDB22CC72DB0000CDFB /* smartmobTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8C47FD822CC72DB0000CDFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8C47FBB22CC72DB0000CDFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8C47FC222CC72DB0000CDFB;
+			remoteInfo = smartmob;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03D65FE3CEB037CF64F3B998 /* Pods_smartmob.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smartmob.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05431AF902A1CB8AD88F87E7 /* Pods-smartmobTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartmobTests.debug.xcconfig"; path = "Target Support Files/Pods-smartmobTests/Pods-smartmobTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A0246264DDCE2BC5D0BBBD5 /* Pods-smartmob.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartmob.debug.xcconfig"; path = "Target Support Files/Pods-smartmob/Pods-smartmob.debug.xcconfig"; sourceTree = "<group>"; };
+		7EB6232F1C9DF71EFE09D5EC /* Pods_smartmobTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smartmobTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D40415C3E3C7B03105B91D2 /* Pods-smartmobTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartmobTests.release.xcconfig"; path = "Target Support Files/Pods-smartmobTests/Pods-smartmobTests.release.xcconfig"; sourceTree = "<group>"; };
+		ADD8526D0A8EA390924BA891 /* Pods-smartmob.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartmob.release.xcconfig"; path = "Target Support Files/Pods-smartmob/Pods-smartmob.release.xcconfig"; sourceTree = "<group>"; };
+		F8C47FC322CC72DB0000CDFB /* smartmob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartmob.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8C47FC622CC72DB0000CDFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8C47FC822CC72DB0000CDFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8C47FCB22CC72DB0000CDFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8C47FCD22CC72DB0000CDFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8C47FD022CC72DB0000CDFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8C47FD222CC72DB0000CDFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8C47FD722CC72DB0000CDFB /* smartmobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartmobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8C47FDB22CC72DB0000CDFB /* smartmobTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartmobTests.swift; sourceTree = "<group>"; };
+		F8C47FDD22CC72DB0000CDFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8C47FC022CC72DB0000CDFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFBEB604FBF35AB9D8FEAA26 /* Pods_smartmob.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C47FD422CC72DB0000CDFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8605C66D5E101F723A26D0CF /* Pods_smartmobTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22AFEE6BEB779C39630AE60F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03D65FE3CEB037CF64F3B998 /* Pods_smartmob.framework */,
+				7EB6232F1C9DF71EFE09D5EC /* Pods_smartmobTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD4CC63D5C4086B184D3DED1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A0246264DDCE2BC5D0BBBD5 /* Pods-smartmob.debug.xcconfig */,
+				ADD8526D0A8EA390924BA891 /* Pods-smartmob.release.xcconfig */,
+				05431AF902A1CB8AD88F87E7 /* Pods-smartmobTests.debug.xcconfig */,
+				9D40415C3E3C7B03105B91D2 /* Pods-smartmobTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F8C47FBA22CC72DB0000CDFB = {
+			isa = PBXGroup;
+			children = (
+				F8C47FC522CC72DB0000CDFB /* smartmob */,
+				F8C47FDA22CC72DB0000CDFB /* smartmobTests */,
+				F8C47FC422CC72DB0000CDFB /* Products */,
+				CD4CC63D5C4086B184D3DED1 /* Pods */,
+				22AFEE6BEB779C39630AE60F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F8C47FC422CC72DB0000CDFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8C47FC322CC72DB0000CDFB /* smartmob.app */,
+				F8C47FD722CC72DB0000CDFB /* smartmobTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8C47FC522CC72DB0000CDFB /* smartmob */ = {
+			isa = PBXGroup;
+			children = (
+				F8C47FC622CC72DB0000CDFB /* AppDelegate.swift */,
+				F8C47FC822CC72DB0000CDFB /* ViewController.swift */,
+				F8C47FCA22CC72DB0000CDFB /* Main.storyboard */,
+				F8C47FCD22CC72DB0000CDFB /* Assets.xcassets */,
+				F8C47FCF22CC72DB0000CDFB /* LaunchScreen.storyboard */,
+				F8C47FD222CC72DB0000CDFB /* Info.plist */,
+			);
+			path = smartmob;
+			sourceTree = "<group>";
+		};
+		F8C47FDA22CC72DB0000CDFB /* smartmobTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8C47FDB22CC72DB0000CDFB /* smartmobTests.swift */,
+				F8C47FDD22CC72DB0000CDFB /* Info.plist */,
+			);
+			path = smartmobTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8C47FC222CC72DB0000CDFB /* smartmob */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8C47FE022CC72DB0000CDFB /* Build configuration list for PBXNativeTarget "smartmob" */;
+			buildPhases = (
+				842DA6BE3B378218FF02A3CA /* [CP] Check Pods Manifest.lock */,
+				F8C47FBF22CC72DB0000CDFB /* Sources */,
+				F8C47FC022CC72DB0000CDFB /* Frameworks */,
+				F8C47FC122CC72DB0000CDFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smartmob;
+			productName = smartmob;
+			productReference = F8C47FC322CC72DB0000CDFB /* smartmob.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8C47FD622CC72DB0000CDFB /* smartmobTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8C47FE322CC72DB0000CDFB /* Build configuration list for PBXNativeTarget "smartmobTests" */;
+			buildPhases = (
+				48C52C620BBF5B4022CBA1B8 /* [CP] Check Pods Manifest.lock */,
+				F8C47FD322CC72DB0000CDFB /* Sources */,
+				F8C47FD422CC72DB0000CDFB /* Frameworks */,
+				F8C47FD522CC72DB0000CDFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8C47FD922CC72DB0000CDFB /* PBXTargetDependency */,
+			);
+			name = smartmobTests;
+			productName = smartmobTests;
+			productReference = F8C47FD722CC72DB0000CDFB /* smartmobTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8C47FBB22CC72DB0000CDFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Santosh Kc";
+				TargetAttributes = {
+					F8C47FC222CC72DB0000CDFB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					F8C47FD622CC72DB0000CDFB = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = F8C47FC222CC72DB0000CDFB;
+					};
+				};
+			};
+			buildConfigurationList = F8C47FBE22CC72DB0000CDFB /* Build configuration list for PBXProject "smartmob" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8C47FBA22CC72DB0000CDFB;
+			productRefGroup = F8C47FC422CC72DB0000CDFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8C47FC222CC72DB0000CDFB /* smartmob */,
+				F8C47FD622CC72DB0000CDFB /* smartmobTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8C47FC122CC72DB0000CDFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C47FD122CC72DB0000CDFB /* LaunchScreen.storyboard in Resources */,
+				F8C47FCE22CC72DB0000CDFB /* Assets.xcassets in Resources */,
+				F8C47FCC22CC72DB0000CDFB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C47FD522CC72DB0000CDFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48C52C620BBF5B4022CBA1B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smartmobTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		842DA6BE3B378218FF02A3CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smartmob-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8C47FBF22CC72DB0000CDFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C47FC922CC72DB0000CDFB /* ViewController.swift in Sources */,
+				F8C47FC722CC72DB0000CDFB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8C47FD322CC72DB0000CDFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8C47FDC22CC72DB0000CDFB /* smartmobTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8C47FD922CC72DB0000CDFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8C47FC222CC72DB0000CDFB /* smartmob */;
+			targetProxy = F8C47FD822CC72DB0000CDFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8C47FCA22CC72DB0000CDFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8C47FCB22CC72DB0000CDFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8C47FCF22CC72DB0000CDFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8C47FD022CC72DB0000CDFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8C47FDE22CC72DB0000CDFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8C47FDF22CC72DB0000CDFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8C47FE122CC72DB0000CDFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A0246264DDCE2BC5D0BBBD5 /* Pods-smartmob.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RPJF76J65;
+				INFOPLIST_FILE = smartmob/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.santoshkc.smartmob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8C47FE222CC72DB0000CDFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADD8526D0A8EA390924BA891 /* Pods-smartmob.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RPJF76J65;
+				INFOPLIST_FILE = smartmob/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.santoshkc.smartmob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8C47FE422CC72DB0000CDFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05431AF902A1CB8AD88F87E7 /* Pods-smartmobTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RPJF76J65;
+				INFOPLIST_FILE = smartmobTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.santoshkc.smartmobTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartmob.app/smartmob";
+			};
+			name = Debug;
+		};
+		F8C47FE522CC72DB0000CDFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D40415C3E3C7B03105B91D2 /* Pods-smartmobTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RPJF76J65;
+				INFOPLIST_FILE = smartmobTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.santoshkc.smartmobTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartmob.app/smartmob";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8C47FBE22CC72DB0000CDFB /* Build configuration list for PBXProject "smartmob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C47FDE22CC72DB0000CDFB /* Debug */,
+				F8C47FDF22CC72DB0000CDFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8C47FE022CC72DB0000CDFB /* Build configuration list for PBXNativeTarget "smartmob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C47FE122CC72DB0000CDFB /* Debug */,
+				F8C47FE222CC72DB0000CDFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8C47FE322CC72DB0000CDFB /* Build configuration list for PBXNativeTarget "smartmobTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8C47FE422CC72DB0000CDFB /* Debug */,
+				F8C47FE522CC72DB0000CDFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8C47FBB22CC72DB0000CDFB /* Project object */;
+}

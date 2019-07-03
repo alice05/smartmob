@@ -1,0 +1,6 @@
+framework module Pods_smartmob {
+  umbrella header "Pods-smartmob-umbrella.h"
+
+  export *
+  module * { export * }
+}
