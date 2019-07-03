@@ -5,6 +5,9 @@ target 'smartmob' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'SwiftLint'
+  pod 'Outlaw', :git => 'https://github.com/Molbie/Outlaw.git', :tag => '4.0.0'
+  pod 'Alamofire'
+
   # Pods for smartmob
 
   target 'smartmobTests' do
