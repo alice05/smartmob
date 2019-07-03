@@ -18,7 +18,8 @@ extension SwinjectStoryboard {
         let dependencyRegistry: DependencyRegistry = AppDelegate.dependencyRegistry
         
         dependencyRegistry.container.storyboardInitCompleted(PhotoListViewController.self) { (resolver, vc) in
-            
+            let viewModel = resolver.resolve(PhotoListViewModel.self)!
+            vc.configure(photoListViewModel: viewModel, registry: dependencyRegistry)
         }
     }
 }
