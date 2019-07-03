@@ -1,17 +1,27 @@
 PODS:
   - Alamofire (4.8.2)
+  - Kingfisher (5.5.0)
   - Outlaw (2.0.1)
   - SwiftLint (0.32.0)
+  - Swinject (2.6.1)
+  - SwinjectStoryboard (2.2.0):
+    - Swinject (~> 2.6)
 
 DEPENDENCIES:
   - Alamofire
+  - Kingfisher
   - Outlaw (from `https://github.com/Molbie/Outlaw.git`, tag `4.0.0`)
   - SwiftLint
+  - Swinject
+  - SwinjectStoryboard
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Kingfisher
     - SwiftLint
+    - Swinject
+    - SwinjectStoryboard
 
 EXTERNAL SOURCES:
   Outlaw:
@@ -25,9 +35,12 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Kingfisher: 6fe5e67a90fd335e49b0f5c075ff55ac5ebedd94
   Outlaw: bb23a6409a388edee14491077cb276192103a728
   SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
+  Swinject: b624462f47b635a64f89a60a247baa5fccec14e1
+  SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
 
-PODFILE CHECKSUM: 110f7ef849380ac1ff2739eb9b6393ac61e445b6
+PODFILE CHECKSUM: b561cb8ead370ca77430d12e4964a772882b053a
 
 COCOAPODS: 1.7.1

@@ -256,11 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8C47FE022CC72DB0000CDFB /* Build configuration list for PBXNativeTarget "smartmob" */;
 			buildPhases = (
-				F8C47FE822CC77690000CDFB /* ShellScript */,
 				842DA6BE3B378218FF02A3CA /* [CP] Check Pods Manifest.lock */,
+				F8C47FE822CC77690000CDFB /* ShellScript */,
 				F8C47FBF22CC72DB0000CDFB /* Sources */,
 				F8C47FC022CC72DB0000CDFB /* Frameworks */,
 				F8C47FC122CC72DB0000CDFB /* Resources */,
+				5459A12C9E5BBD7F5D8CEADB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -370,6 +371,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5459A12C9E5BBD7F5D8CEADB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-smartmob/Pods-smartmob-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-smartmob/Pods-smartmob-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-smartmob/Pods-smartmob-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		842DA6BE3B378218FF02A3CA /* [CP] Check Pods Manifest.lock */ = {
