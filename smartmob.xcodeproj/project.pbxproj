@@ -18,6 +18,7 @@
 		F8C47FF222CC81FA0000CDFB /* AssestsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C47FF122CC81FA0000CDFB /* AssestsDTO.swift */; };
 		F8C47FF422CC841E0000CDFB /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C47FF322CC841E0000CDFB /* NetworkLayer.swift */; };
 		F8C47FF622CC854B0000CDFB /* TranslationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C47FF522CC854B0000CDFB /* TranslationLayer.swift */; };
+		F8C47FF822CC85EF0000CDFB /* ModelLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C47FF722CC85EF0000CDFB /* ModelLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		F8C47FF122CC81FA0000CDFB /* AssestsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssestsDTO.swift; sourceTree = "<group>"; };
 		F8C47FF322CC841E0000CDFB /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		F8C47FF522CC854B0000CDFB /* TranslationLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationLayer.swift; sourceTree = "<group>"; };
+		F8C47FF722CC85EF0000CDFB /* ModelLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				F8C47FF022CC81990000CDFB /* TranslationLayer */,
 				F8C47FEF22CC818B0000CDFB /* DTOs */,
 				F8C47FEE22CC81770000CDFB /* NetworkLayer */,
+				F8C47FF722CC85EF0000CDFB /* ModelLayer.swift */,
 			);
 			path = ModelLayer;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8C47FF422CC841E0000CDFB /* NetworkLayer.swift in Sources */,
+				F8C47FF822CC85EF0000CDFB /* ModelLayer.swift in Sources */,
 				F8C47FEC22CC7F9A0000CDFB /* Network+Constants.swift in Sources */,
 				F8C47FC722CC72DB0000CDFB /* AppDelegate.swift in Sources */,
 				F8C47FF222CC81FA0000CDFB /* AssestsDTO.swift in Sources */,
