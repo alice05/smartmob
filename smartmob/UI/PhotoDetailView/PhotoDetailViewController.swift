@@ -56,6 +56,7 @@ class PhotoDetailViewController: UIViewController {
             debugPrint("progress is ", progress)
             self.progressView.setProgress(to: progress.fractionCompleted, withAnimation: true)
             }.response { [weak self] (response) in
+                self?.progressView.isHidden = true
                 if let mimetype = response.response?.mimeType {
                     let typeArray = mimetype.components(separatedBy: "/")
                     if typeArray.count>0{
