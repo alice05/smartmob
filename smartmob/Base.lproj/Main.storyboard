@@ -102,7 +102,7 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TJk-8w-cij" customClass="CircularProgressBar" customModule="smartmob" customModuleProvider="target">
                                 <rect key="frame" x="40" y="281" width="334" height="334"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="TJk-8w-cij" secondAttribute="height" multiplier="1:1" id="1Es-TA-Lri"/>
                                 </constraints>

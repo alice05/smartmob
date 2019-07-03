@@ -87,6 +87,9 @@ extension PhotoListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let assest = self.photoListViewModel.data[indexPath.row]
         debugPrint("tapped")
+        let detailVc = registry.makePhotoDetailViewController(assests: assest)
+        detailVc.modalTransitionStyle = .crossDissolve
+        self.present(detailVc, animated: true, completion: nil)
     }
 }
 
