@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Kingfisher
+import Alamofire
 
 
 class PhotoDetailViewController: UIViewController {
@@ -35,6 +35,7 @@ class PhotoDetailViewController: UIViewController {
         imageView.kf.setImage(with: URL(string: photodetailViewModel.url)!)
         let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swiped(sender:)))
         self.view.addGestureRecognizer(swipeGesture)
+        downloadHQAssest()
     }
     
     
@@ -48,5 +49,30 @@ class PhotoDetailViewController: UIViewController {
     
     private func dismiss() {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    private func downloadHQAssest() {
+        Alamofire.request(URL(string: photodetailViewModel.largeUrl)!, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).downloadProgress { (progress) in
+            debugPrint("progress is ", progress)
+            self.progressView.setProgress(to: progress.fractionCompleted, withAnimation: true)
+            }.response { [weak self] (response) in
+                if let mimetype = response.response?.mimeType {
+                    let typeArray = mimetype.components(separatedBy: "/")
+                    if typeArray.count>0{
+                        let type = typeArray[0]
+                        guard let data = response.data else { return }
+                        switch type {
+                        case "image":
+                            self?.imageView.image = UIImage(data: data)
+                            break
+                        case "video":
+                            
+                            break
+                        default:
+                            break
+                        }
+                    }
+                }
+        }
     }
 }
