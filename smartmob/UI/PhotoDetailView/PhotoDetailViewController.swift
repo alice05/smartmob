@@ -33,5 +33,20 @@ class PhotoDetailViewController: UIViewController {
         super.viewDidLoad()
         
         imageView.kf.setImage(with: URL(string: photodetailViewModel.url)!)
+        let swipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(swiped(sender:)))
+        self.view.addGestureRecognizer(swipeGesture)
+    }
+    
+    
+    @IBAction func closeButtonTapped(_ sender: Any) {
+        dismiss()
+    }
+    
+    @objc private func swiped(sender: Any) {
+        dismiss()
+    }
+    
+    private func dismiss() {
+        self.dismiss(animated: true, completion: nil)
     }
 }
