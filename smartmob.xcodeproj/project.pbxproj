@@ -27,6 +27,7 @@
 		F8C4800C22CCCB640000CDFB /* ViewIdentifiers_Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4800B22CCCB640000CDFB /* ViewIdentifiers_Constants.swift */; };
 		F8C4800E22CCCC920000CDFB /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4800D22CCCC920000CDFB /* PhotoDetailViewController.swift */; };
 		F8C4801022CCCE120000CDFB /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4800F22CCCE120000CDFB /* PhotoViewCell.swift */; };
+		F8C4801322CCCEDF0000CDFB /* DependencyRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4801222CCCEDF0000CDFB /* DependencyRegistry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		F8C4800B22CCCB640000CDFB /* ViewIdentifiers_Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewIdentifiers_Constants.swift; sourceTree = "<group>"; };
 		F8C4800D22CCCC920000CDFB /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		F8C4800F22CCCE120000CDFB /* PhotoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
+		F8C4801222CCCEDF0000CDFB /* DependencyRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyRegistry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		F8C47FC522CC72DB0000CDFB /* smartmob */ = {
 			isa = PBXGroup;
 			children = (
+				F8C4801122CCCEA60000CDFB /* Dependencies */,
 				F8C47FFC22CCC5340000CDFB /* UI */,
 				F8C47FED22CC81590000CDFB /* ModelLayer */,
 				F8C47FE922CC7F7A0000CDFB /* Helper */,
@@ -250,6 +253,14 @@
 				F8C4800922CCCB180000CDFB /* CircularProgressView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F8C4801122CCCEA60000CDFB /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				F8C4801222CCCEDF0000CDFB /* DependencyRegistry.swift */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,6 +452,7 @@
 			files = (
 				F8C4800522CCC73B0000CDFB /* PhotoViewCellViewModel.swift in Sources */,
 				F8C4801022CCCE120000CDFB /* PhotoViewCell.swift in Sources */,
+				F8C4801322CCCEDF0000CDFB /* DependencyRegistry.swift in Sources */,
 				F8C47FF422CC841E0000CDFB /* NetworkLayer.swift in Sources */,
 				F8C47FF822CC85EF0000CDFB /* ModelLayer.swift in Sources */,
 				F8C4800C22CCCB640000CDFB /* ViewIdentifiers_Constants.swift in Sources */,
