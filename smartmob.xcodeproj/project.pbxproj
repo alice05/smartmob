@@ -20,6 +20,7 @@
 		F8C47FF622CC854B0000CDFB /* TranslationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C47FF522CC854B0000CDFB /* TranslationLayer.swift */; };
 		F8C47FF822CC85EF0000CDFB /* ModelLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C47FF722CC85EF0000CDFB /* ModelLayer.swift */; };
 		F8C4800122CCC59B0000CDFB /* PhotoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4800022CCC59B0000CDFB /* PhotoListViewModel.swift */; };
+		F8C4800322CCC6690000CDFB /* PhotoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C4800222CCC6690000CDFB /* PhotoDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		F8C47FF522CC854B0000CDFB /* TranslationLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationLayer.swift; sourceTree = "<group>"; };
 		F8C47FF722CC85EF0000CDFB /* ModelLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLayer.swift; sourceTree = "<group>"; };
 		F8C4800022CCC59B0000CDFB /* PhotoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewModel.swift; sourceTree = "<group>"; };
+		F8C4800222CCC6690000CDFB /* PhotoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 		F8C47FFE22CCC56A0000CDFB /* PhotoDetailView */ = {
 			isa = PBXGroup;
 			children = (
+				F8C4800222CCC6690000CDFB /* PhotoDetailViewModel.swift */,
 			);
 			path = PhotoDetailView;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				F8C47FC722CC72DB0000CDFB /* AppDelegate.swift in Sources */,
 				F8C47FF222CC81FA0000CDFB /* AssestsDTO.swift in Sources */,
 				F8C47FF622CC854B0000CDFB /* TranslationLayer.swift in Sources */,
+				F8C4800322CCC6690000CDFB /* PhotoDetailViewModel.swift in Sources */,
 				F8C4800122CCC59B0000CDFB /* PhotoListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
