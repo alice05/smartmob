@@ -15,6 +15,7 @@
 		F8C47FD122CC72DB0000CDFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C47FCF22CC72DB0000CDFB /* LaunchScreen.storyboard */; };
 		F8C47FE722CC77430000CDFB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F8C47FE622CC77300000CDFB /* README.md */; };
 		F8C47FEC22CC7F9A0000CDFB /* Network+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C47FEB22CC7F9A0000CDFB /* Network+Constants.swift */; };
+		F8C47FF222CC81FA0000CDFB /* AssestsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C47FF122CC81FA0000CDFB /* AssestsDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		F8C47FDD22CC72DB0000CDFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8C47FE622CC77300000CDFB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F8C47FEB22CC7F9A0000CDFB /* Network+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network+Constants.swift"; sourceTree = "<group>"; };
+		F8C47FF122CC81FA0000CDFB /* AssestsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssestsDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		F8C47FC522CC72DB0000CDFB /* smartmob */ = {
 			isa = PBXGroup;
 			children = (
+				F8C47FED22CC81590000CDFB /* ModelLayer */,
 				F8C47FE922CC7F7A0000CDFB /* Helper */,
 				F8C47FC622CC72DB0000CDFB /* AppDelegate.swift */,
 				F8C47FCA22CC72DB0000CDFB /* Main.storyboard */,
@@ -144,6 +147,38 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		F8C47FED22CC81590000CDFB /* ModelLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F8C47FF022CC81990000CDFB /* TranslationLayer */,
+				F8C47FEF22CC818B0000CDFB /* DTOs */,
+				F8C47FEE22CC81770000CDFB /* NetworkLayer */,
+			);
+			path = ModelLayer;
+			sourceTree = "<group>";
+		};
+		F8C47FEE22CC81770000CDFB /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		F8C47FEF22CC818B0000CDFB /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				F8C47FF122CC81FA0000CDFB /* AssestsDTO.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		F8C47FF022CC81990000CDFB /* TranslationLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TranslationLayer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,12 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8C47FE022CC72DB0000CDFB /* Build configuration list for PBXNativeTarget "smartmob" */;
 			buildPhases = (
-				842DA6BE3B378218FF02A3CA /* [CP] Check Pods Manifest.lock */,
 				F8C47FE822CC77690000CDFB /* ShellScript */,
+				842DA6BE3B378218FF02A3CA /* [CP] Check Pods Manifest.lock */,
 				F8C47FBF22CC72DB0000CDFB /* Sources */,
 				F8C47FC022CC72DB0000CDFB /* Frameworks */,
 				F8C47FC122CC72DB0000CDFB /* Resources */,
-				DAEFD71CEB9FF4732007054B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,23 +324,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DAEFD71CEB9FF4732007054B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-smartmob/Pods-smartmob-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-smartmob/Pods-smartmob-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-smartmob/Pods-smartmob-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F8C47FE822CC77690000CDFB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,6 +350,7 @@
 			files = (
 				F8C47FEC22CC7F9A0000CDFB /* Network+Constants.swift in Sources */,
 				F8C47FC722CC72DB0000CDFB /* AppDelegate.swift in Sources */,
+				F8C47FF222CC81FA0000CDFB /* AssestsDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
