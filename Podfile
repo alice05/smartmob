@@ -7,6 +7,9 @@ target 'smartmob' do
   pod 'SwiftLint'
   pod 'Outlaw', :git => 'https://github.com/Molbie/Outlaw.git', :tag => '4.0.0'
   pod 'Alamofire'
+  pod 'Swinject'
+  pod 'SwinjectStoryboard'
+  pod 'Kingfisher'
 
   # Pods for smartmob
 
