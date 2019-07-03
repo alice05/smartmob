@@ -14,6 +14,7 @@
 		F8C47FCE22CC72DB0000CDFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C47FCD22CC72DB0000CDFB /* Assets.xcassets */; };
 		F8C47FD122CC72DB0000CDFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C47FCF22CC72DB0000CDFB /* LaunchScreen.storyboard */; };
 		F8C47FE722CC77430000CDFB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F8C47FE622CC77300000CDFB /* README.md */; };
+		F8C47FEC22CC7F9A0000CDFB /* Network+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C47FEB22CC7F9A0000CDFB /* Network+Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		F8C47FD722CC72DB0000CDFB /* smartmobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartmobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8C47FDD22CC72DB0000CDFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8C47FE622CC77300000CDFB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F8C47FEB22CC7F9A0000CDFB /* Network+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network+Constants.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		F8C47FC522CC72DB0000CDFB /* smartmob */ = {
 			isa = PBXGroup;
 			children = (
+				F8C47FE922CC7F7A0000CDFB /* Helper */,
 				F8C47FC622CC72DB0000CDFB /* AppDelegate.swift */,
 				F8C47FCA22CC72DB0000CDFB /* Main.storyboard */,
 				F8C47FCD22CC72DB0000CDFB /* Assets.xcassets */,
@@ -123,6 +126,22 @@
 				F8C47FDD22CC72DB0000CDFB /* Info.plist */,
 			);
 			path = smartmobTests;
+			sourceTree = "<group>";
+		};
+		F8C47FE922CC7F7A0000CDFB /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F8C47FEA22CC7F860000CDFB /* Constants */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F8C47FEA22CC7F860000CDFB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F8C47FEB22CC7F9A0000CDFB /* Network+Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C47FEC22CC7F9A0000CDFB /* Network+Constants.swift in Sources */,
 				F8C47FC722CC72DB0000CDFB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
