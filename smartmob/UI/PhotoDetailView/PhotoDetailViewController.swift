@@ -54,23 +54,27 @@ class PhotoDetailViewController: UIViewController {
     private func downloadHQAssest() {
         Alamofire.request(URL(string: photodetailViewModel.largeUrl)!, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil).downloadProgress { (progress) in
             debugPrint("progress is ", progress)
-            self.progressView.setProgress(to: progress.fractionCompleted, withAnimation: true)
+            DispatchQueue.main.async {
+                self.progressView.setProgress(to: progress.fractionCompleted, withAnimation: false)
+            }
             }.response { [weak self] (response) in
-                self?.progressView.isHidden = true
-                if let mimetype = response.response?.mimeType {
-                    let typeArray = mimetype.components(separatedBy: "/")
-                    if typeArray.count>0{
-                        let type = typeArray[0]
-                        guard let data = response.data else { return }
-                        switch type {
-                        case "image":
-                            self?.imageView.image = UIImage(data: data)
-                            break
-                        case "video":
-                            
-                            break
-                        default:
-                            break
+                DispatchQueue.main.async {
+                    self?.progressView.isHidden = true
+                    if let mimetype = response.response?.mimeType {
+                        let typeArray = mimetype.components(separatedBy: "/")
+                        if typeArray.count>0{
+                            let type = typeArray[0]
+                            guard let data = response.data else { return }
+                            switch type {
+                            case "image":
+                                self?.imageView.image = UIImage(data: data)
+                                break
+                            case "video":
+                                
+                                break
+                            default:
+                                break
+                            }
                         }
                     }
                 }
